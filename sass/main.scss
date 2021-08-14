@@ -1,13 +1,19 @@
+@mixin battlefield($color: Blue) {
+  font-size: 1rem;
+  width: 25em;
+  height: 25em;
+  background-color: $color;
+  padding: 0;
+}
+
+
 html {
-  font-size: 1em;
-  
+  font-size: 16px; // replace it with 1 rem afterward
   
   .grid-user {
-    width: 400px;
-  height: 400px;
-  display: flex;
-  flex-wrap: wrap;
-  background-color: yellow;
+    @include battlefield($color: yellow);
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .grid-div {
@@ -16,10 +22,8 @@ html {
   }
 
   .grid-AI {
-    width: 400px;
-    height: 400px;
+    @include battlefield($color: red);
     display: flex;
     flex-wrap: wrap;
-    background-color: red;
   }
 }

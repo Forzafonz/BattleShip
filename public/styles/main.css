@@ -1,21 +1,25 @@
 html {
-  font-size: 1em;
+  font-size: 16px;
 }
 html .grid-user {
-  width: 400px;
-  height: 400px;
+  font-size: 1rem;
+  width: 25em;
+  height: 25em;
+  background-color: yellow;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
-  background-color: yellow;
 }
 html .grid-div {
   width: 40px;
   height: 40px;
 }
 html .grid-AI {
-  width: 400px;
-  height: 400px;
+  font-size: 1rem;
+  width: 25em;
+  height: 25em;
+  background-color: red;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
-  background-color: red;
 }
