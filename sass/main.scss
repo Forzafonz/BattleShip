@@ -4,26 +4,43 @@
   height: 25em;
   background-color: $color;
   padding: 0;
+  margin: 1em;
+}
+
+@mixin display(){
+  display: flex;
+  justify-self: center;
+  width: 80%;
+  height: auto;
+  min-width: 200px;
+  margin: 1em;
 }
 
 
 html {
   font-size: 16px; // replace it with 1 rem afterward
-  
-  .grid-user {
-    @include battlefield($color: yellow);
-    display: flex;
-    flex-wrap: wrap;
+
+  #play-board {
+
+    @include display();
+
+    .grid-user {
+      @include battlefield($color: yellow);
+
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .grid-AI {
+      @include battlefield($color: red);
+      display: flex;
+      flex-wrap: wrap;
+    }
+
   }
 
   .grid-div {
     width: 40px; 
     height: 40px;
-  }
-
-  .grid-AI {
-    @include battlefield($color: red);
-    display: flex;
-    flex-wrap: wrap;
   }
 }
