@@ -7,8 +7,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 
-
-
 app.listen(PORT, () => {
   console.log("Example app listening on port " + PORT);
 });
