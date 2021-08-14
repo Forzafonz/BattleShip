@@ -1,17 +1,18 @@
-.grid-user {
+html {
+  font-size: 1em;
+}
+html .grid-user {
   width: 400px;
   height: 400px;
   display: flex;
   flex-wrap: wrap;
-  background-color: black;
+  background-color: yellow;
 }
-
-.grid-div {
-  width: 40px; 
+html .grid-div {
+  width: 40px;
   height: 40px;
 }
-
-.grid-AI {
+html .grid-AI {
   width: 400px;
   height: 400px;
   display: flex;
