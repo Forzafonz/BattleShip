@@ -16,9 +16,23 @@
   margin: 1em;
 }
 
+%button-style {
+  font-size: 1rem;
+  font-style: oblique;
+  color: white;
+  width: 7em;
+  height: 2em;
+  background-color: blue;
+  &:hover {
+    background-color: lightblue;
+    box-shadow: 0em 0em 0.3em 0.3em rgb(255, 255, 255, 0.2), 0 0 0.2em 0.2em rgb(252, 252, 252, 0.5);
+    color: black;
+  }
+}
 
 html {
   font-size: 16px; // replace it with 1 rem afterward
+  background-color: black;
 
   #play-board {
 
@@ -26,7 +40,6 @@ html {
 
     .grid-user {
       @include battlefield($color: yellow);
-
       display: flex;
       flex-wrap: wrap;
     }
@@ -39,8 +52,15 @@ html {
 
   }
 
-  .grid-div {
-    width: 40px; 
-    height: 40px;
+  .interface {
+
+    #start {
+      @extend %button-style;
+    }
+
+    #rotate {
+      @extend %button-style;
+    }
   }
+
 }
