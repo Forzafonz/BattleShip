@@ -11,13 +11,20 @@ html {
     margin: 0;
     position: fixed;
     left:0;
+    top: 0;
     right: 0;
     font-size: 1rem;
-
-    title {
-      font-size: 1em ;
-    }
+    padding: 1.5em;
 
   }
 
+  #title {
+    font-size: 0.3em;
+    margin: 0.2em;
+    padding: 0.3em;
+    color: orange;
+    font-size: 3em;
+  }
+
 }
+
