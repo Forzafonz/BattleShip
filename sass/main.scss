@@ -8,11 +8,14 @@
   margin-top: 12em;
 }
 
-@mixin battleship($shipcolor: black, $shipsize: 1) {
+@mixin battleship($shipcolor: black, $shipsize: 1, $order: 1) {
   height: 3em;
   width: 3em * $shipsize;
-  color:$shipcolor;
+  background-color:$shipcolor;
   border-radius: 7%;
+  z-index:10;
+  position: absolute;
+  margin-top: 3em * $order;
 }
 
 @mixin display(){
@@ -61,7 +64,7 @@ html {
     }
 
   }
-
+  
   .interface {
 
     display: flex;
@@ -88,7 +91,25 @@ html {
     margin-top: 2em;
     display: flex;
     flex-direction: column;
-    
-  }
+    z-index: 1;
+    position: absolute;
+    max-height: 15em;
+    padding: 0.5em;
 
+      #carrier{
+        @include battleship(blue, 4, 0);
+      }
+      #battleship{
+        @include battleship( coral, 3, 1);
+      }
+      #cruiser{
+        @include battleship(#BADA55, 2, 2);
+      }
+      #submarine{
+        @include battleship(violet, 2, 3);
+      }
+      #destroyer{
+        @include battleship( purple, 1, 4);
+      }
+  }
 }

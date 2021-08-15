@@ -65,4 +65,53 @@ html #ships-list {
   margin-top: 2em;
   display: flex;
   flex-direction: column;
+  z-index: 1;
+  position: absolute;
+  max-height: 15em;
+  padding: 0.5em;
+}
+html #ships-list #carrier {
+  height: 3em;
+  width: 12em;
+  background-color: blue;
+  border-radius: 7%;
+  z-index: 10;
+  position: absolute;
+  margin-top: 0em;
+}
+html #ships-list #battleship {
+  height: 3em;
+  width: 9em;
+  background-color: coral;
+  border-radius: 7%;
+  z-index: 10;
+  position: absolute;
+  margin-top: 3em;
+}
+html #ships-list #cruiser {
+  height: 3em;
+  width: 6em;
+  background-color: #BADA55;
+  border-radius: 7%;
+  z-index: 10;
+  position: absolute;
+  margin-top: 6em;
+}
+html #ships-list #submarine {
+  height: 3em;
+  width: 6em;
+  background-color: violet;
+  border-radius: 7%;
+  z-index: 10;
+  position: absolute;
+  margin-top: 9em;
+}
+html #ships-list #destroyer {
+  height: 3em;
+  width: 3em;
+  background-color: purple;
+  border-radius: 7%;
+  z-index: 10;
+  position: absolute;
+  margin-top: 12em;
 }
